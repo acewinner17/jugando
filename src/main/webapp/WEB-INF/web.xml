@@ -4,4 +4,28 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>UploadFile</servlet-name>
+  	<display-name>UploadFile</display-name>
+  	<description>Servlet para cargar archivo</description>
+  	<servlet-class>ibm.com.UploadFile</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>FileUploadServlet</servlet-name>
+  	<display-name>FileUploadServlet</display-name>
+  	<description></description>
+  	<servlet-class>ibm.com.FileUploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UploadFile</servlet-name>
+  	<url-pattern>/UploadFile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FileUploadServlet</servlet-name>
+  	<url-pattern>/FileUploadServlet</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
 </web-app>
